@@ -11,7 +11,7 @@ export default function useFormGame() {
     const [generoGame, setGeneroGame] = useState("Accion");
 
     function addGame() {
-        if (titleGame !== '' || descpGame !== '') {
+        if (titleGame !== '' && descpGame !== '') {
             const obj = {
                 id: data.length + 1,
                 title: titleGame,
@@ -19,8 +19,8 @@ export default function useFormGame() {
                 genre: generoGame,
             };
             setData([...data, obj]);
-            setTitleGame("");
-            setDescpGame("");
+            setTitleGame('');
+            setDescpGame('');
         }
 
     }

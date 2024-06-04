@@ -48,7 +48,7 @@ const FormGameComponent = () => {
                                         value={titleGame}
                                         onChange={(event) => setTitleGame(event.target.value)}
                                     />
-                                    {errors.title && <p>{errors.title.message}</p>}
+                                    {errors.title && <p className='error'>{errors.title.message}</p>}
                                 </div>
 
                                 <div>
@@ -61,7 +61,7 @@ const FormGameComponent = () => {
                                         value={descpGame}
                                         onChange={(event) => setDescpGame(event.target.value)}
                                     />
-                                    {errors.description && <p>{errors.description.message}</p>}
+                                    {errors.description && <p className='error'>{errors.description.message}</p>}
                                 </div>
                                 <div>
                                     <label> Selecciona un género de videojuegos:</label>
