@@ -9,7 +9,7 @@ export default function GameList() {
       {filteredData.map((game) => (
         <div className="col" key={game.id}>
           <div className="card h-100">
-            <img src="./mario64.jpg" className="card-img-top" alt="..." />
+            <img src={`./${game.image}`} className="card-img-top img-resposive" alt={`${game.description}`} />
             <div className="card-body">
               <h5 className="card-title">{game.title}</h5>
               <p className="card-text">{game.description}</p>
